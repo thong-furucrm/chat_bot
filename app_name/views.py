@@ -90,7 +90,7 @@ def demo(request):
         except Exception as e:
             print(f'Lỗi không lấy được medicine_name hoặc medicine_table: {e}')
             return HttpResponse("Vui lòng cung cấp câu hỏi rõ hơn.")
-    return HttpResponse("hello thong")
+    return render(request, 'index.html')
 
 
 def analyze_question(question):
